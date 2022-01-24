@@ -234,7 +234,7 @@ margin-right: 30px;
 .team-list {
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .team-title {
@@ -270,11 +270,7 @@ margin-right: 30px;
   color: #757575;
 }
 
-.team-social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-}
+
 
 .team-social-item {
 width: 44px;
@@ -305,11 +301,26 @@ height: 44px;
 .clients-social-list{
   display: flex;
   justify-content: center;
+  text-align: center;
+
 }
 
 .clients-title {
-  padding-left: 604px;
-  padding-right: 605px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em; 
+  width: 390px;
+  height: 42px; 
+  padding-bottom: 50px; 
+  margin: 0 auto;
+
+  color: #212121;
+  
+}
+
+.clients-social-item + .clients-social-list {
+  margin-left: 10px;
 }
 
 
@@ -397,6 +408,21 @@ height: 44px;
 .footer-link:hover {
   color: var(--blue-text-colour);
 }
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  }
+  
+  .footer-social-link {
+    width: 100%;
+    height: 100%;
+  }
+  
 
 .footer-connect {
   font-size: 14px;
