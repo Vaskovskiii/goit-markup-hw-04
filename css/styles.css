@@ -137,12 +137,22 @@ font-family: 'Roboto', sans-serif;
 
 .link-header-tel:hover,
 .link-header-tel:focus {
-  color: var(--blue-text-colour);
+  color:  var(--blue-text-colour);
+}
+
+.link-header-tel:hover svg,
+.link-header-tel:focus svg {
+  fill: var(--blue-text-colour);
 }
 
 .link-header-mail:hover,
 .link-header-mail:focus {
-color: var(--blue-text-colour);
+  color:  var(--blue-text-colour);
+}
+
+.link-header-mail:hover svg,
+.link-header-mail:focus svg {
+  fill: var(--blue-text-colour);
 }
 
 
