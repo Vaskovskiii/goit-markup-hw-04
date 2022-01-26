@@ -141,6 +141,7 @@ font-family: 'Roboto', sans-serif;
   background-repeat: no-repeat;
   max-width: 1600px;
   max-height: 600px;
+  margin: 0 auto;
   background-size: cover;
 }
 
@@ -155,7 +156,7 @@ font-family: 'Roboto', sans-serif;
   width: 696px;
   height: 120px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  margin-bottom: 30px;
 
   color: #FFFFFF;
 }
@@ -269,10 +270,7 @@ margin-right: 30px;
   justify-content: center;
 }
 
-.team-social-list {
-  display: flex;
-  justify-content: center;
-}
+
 
 .team-title {
   font-size: 36px;
@@ -314,18 +312,35 @@ margin-right: 30px;
   color: #757575;
 }
 
+.team-social-item {
+  width: 44px;
+  height: 44px;
+  }
+
+  .team-social-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .team-social-item + .team-social-item {
+    margin-left: 10px;
+  }
+
 .team-social-link {
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   display: flex;
+  border-radius: 50%;
+  background-color: #FFFFFF;;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;;
-  width: 100%;
-  height: 100%;
-  color: var(--color-bg-white);
+  
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .team-social-link:hover,
 .team-social-link:focus {
@@ -333,21 +348,8 @@ margin-right: 30px;
   fill: #FFFFFF;
 }
 
-.team-social-item {
-width: 44px;
-height: 44px;
-}
 
 
-
-.team-social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team-social-item + .team-social-list {
-  margin-left: 10px;
-}
 
 /*-----------clients--------*/
 
@@ -371,21 +373,20 @@ height: 44px;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  cursor: pointer;
   fill: #afb1b8;
   color: var(--blue-text-colour);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-social-link:hover,
+.clients--social-link:focus {
   fill: currentColor;
   border-color: var(--blue-text-colour);
 }
 
-.clients-social-item:not(:last-child){
-  margin-right: 30px;
-}
+
 
 .clients-social-list{
   display: flex;
@@ -406,21 +407,16 @@ color: #212121;
   
 }
 
+
+
 .clients-social-icon:focus,
 .clients-social-icon:hover {
   fill: var(--blue-text-colour);
 }
 
 .clients-social-conteiner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #AFB1B8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  cursor: pointer;
-  fill: #AFB1B8;
-  background-color: #f5f4fa;;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-social-conteiner:hover,
@@ -444,6 +440,10 @@ color: #212121;
   background-color: #2F303A;
   padding-bottom: 60px;
   padding-top: 60px;
+}
+
+.footer-wraper {
+  display: flex;
 }
 
 .footer-logo {
@@ -527,7 +527,7 @@ color: #212121;
   }
   
   
-    .footer-social-link {
+.footer-social-link {
       width: 100%;
       height: 100%;
       display: flex;
@@ -539,11 +539,15 @@ color: #212121;
       color: #FFFFFF;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      
-    }
+}
+
+.footer-social-link:hover, .footer-social-link:focus {
+  fill: currentColor;
+  background-color: var(--blue-text-colour);
+  }
   
-  .footer-social-icon  {
-    display: flex;
+  .footer-solution-connect {
+    margin-left: 50px;
   }
 
 .footer-connect {
@@ -559,6 +563,7 @@ color: #212121;
 
 .footer-social-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .footer-social-item + .footer-social-item {
@@ -587,9 +592,8 @@ color: #212121;
   letter-spacing: 0.03em;
   display: flex; 
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  margin-top: 100px;
   justify-content: center;
+  margin-bottom: 50px;
   color: #fff;
 }
 
@@ -617,12 +621,13 @@ color: #212121;
 }
 
 .portfolio-wraper {
+  width: 370px;
   padding-bottom: 20px;
   padding-top: 20px;
-  width: 370px;
   padding-left: 24px;
   padding-right: 24px;
-  outline: 1px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
 }
 
 
@@ -642,10 +647,10 @@ color: #212121;
 
 .portfolio-title {
   font-size: 18px;
-line-height: calc(36 / 18);
-letter-spacing: 0.06em;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
 
-color: #212121;
+  color: #212121;
 }
 
 .portfolio-sec-title {
@@ -659,8 +664,9 @@ color: #212121;
 .portfolio-photo-link {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
+
+
 
 .portfolio-photo-item:not(:nth-child(3n)) {
   margin-right: 30px;
