@@ -125,7 +125,8 @@ font-family: 'Roboto', sans-serif;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-.header-link:hover, .header-link:focus {
+.header-link:hover,
+.header-link:focus {
   color:  var(--blue-text-colour);
 }
 
@@ -134,9 +135,14 @@ font-family: 'Roboto', sans-serif;
   color:  var(--blue-text-colour);
 }
 
-.header-item:hover,
-.header-item:focus {
-  color:  var(--blue-text-colour);
+.link-header-tel:hover,
+.link-header-tel:focus {
+  color: var(--blue-text-colour);
+}
+
+.link-header-mail:hover,
+.link-header-mail:focus {
+color: var(--blue-text-colour);
 }
 
 
@@ -746,7 +752,8 @@ color: #212121;
   transform: translateY(100%);
 }
 
-.portfolio-photo-item {
+.portfolio-photo-item:hover,
+.portfolio-photo-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   background: #FFFFFF;
   cursor: pointer;
